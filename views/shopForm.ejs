@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            flex-direction: column;
+        }
+        img {
+            max-width: 400px;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        input[type="radio"] {
+            display: none;
+        }
+        input[type="radio"]:checked + img {
+            transform: scale(1.1);
+            border: 2px solid #007BFF;
+        }
+        .text {
+         text-align: center;
+        }
+        button {
+            padding: 16px 10px;
+            background: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <form method="post">
+        <label>
+            <div class="text">
+
+                <h2>First product</h2>
+                <h3>300$</h3>
+            </div>
+                <input type="radio" name="product" value=300>
+            <img src="https://picsum.photos/id/121/600/400" alt="">
+        </label>
+        <label>
+            <div class="text">
+
+                <h2>Second product</h2>
+                <h3>345$</h3>
+            </div>
+
+            <input type="radio" name="product" value=345>
+            <img src="https://picsum.photos/id/58/600/400" alt="">
+        </label>
+        <label>
+            <div class="text">
+
+                <h2>Third product</h2>
+                <h3>325$</h3>
+            </div>
+
+
+            <input type="radio" name="product" value=325>
+            <img src="https://picsum.photos/id/659/600/400" alt="Product Image">
+        
+        </label>
+        <button>submit</button>
+    </form>
+</body>
+</html>
